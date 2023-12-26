@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { HiMiniUser } from "react-icons/hi2";
 import Skills from "./components/Skills";
 
@@ -6,7 +7,7 @@ export default function Home() {
   return (
     <main
       className="z-30 mx-auto w-full max-w-screen-sm
-       dark:text-white py-1.5 items-center mt-32 px-10"
+       !text-textColor py-1.5 items-center mt-32 px-10"
     >
       <div className="w-full mt-20 md:mt-0 flex flex-col md:flex-row justify-around items-center text-textColor">
         <div className="flex flex-col leading-extra">
@@ -20,7 +21,7 @@ export default function Home() {
           </p>
           <button className="bg-primary w-max h-max px-5 py-1.5 rounded-md text-darkColor text-xl mt-3 flex scale-100 hover:scale-110 duration-200 delay-75">
             <HiMiniUser className="w-6 h-6 mx-1 my-px" />
-            <span>About me</span>
+            <Link href="/about">About me</Link>
           </button>
         </div>
         <Image

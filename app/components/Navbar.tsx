@@ -39,7 +39,7 @@ export default function Navigation() {
               GitHub
             </a>
             <button
-              className="px-2 py-1 hover:bg-primary hover:backdrop-blur-md hover:px-2 rounded-md delay-100 duration-200"
+              className="px-2 py-1 hover:bg-primary hover:backdrop-blur-md hover:px-2 rounded-md delay-100 duration-200 hover:text-bgColor"
               onClick={() => setIsDark(!isDark)}
             >
               {isDark ? (
